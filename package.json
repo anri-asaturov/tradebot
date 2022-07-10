@@ -1,0 +1,27 @@
+{
+  "name": "tradebot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:anri-asaturov/tradebot.git",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "npm": "echo 'use yarn'; return 1;",
+    "clean": "tsc -b --clean",
+    "build": "yarn clean && tsc -b",
+    "test": "yarn build && vitest run build/"
+  },
+  "dependencies": {
+    "@stoqey/ib": "^1.2.30"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "prettier": "^2.7.1",
+    "vitest": "^0.18.0"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.12.19",
+    "node": ">= 16.15.0"
+  }
+}
